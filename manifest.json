@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "BeefHook",
+    "description": "Load beef in all the web pages",
+    "version": "1",
+    "content_scripts": [
+        {
+          "matches": [ "http://*/*", "https://*/*" ],
+          "js": ["content.js"]
+        }
+      ],
+      "options_ui": {
+        "page": "options.html"
+      },
+      "permissions": ["storage"]
+}
